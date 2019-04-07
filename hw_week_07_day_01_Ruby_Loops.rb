@@ -33,11 +33,54 @@ wolfy.shift()
 wolfy.unshift("Gameboy")
  # another way
 wolfy[0]="Gameboy"
-puts wolfy
+
 # 4- Yell at the Ninja Turtles
+#Capitalize each one of them and print out
+ninja=Array.[]("Donatello", "Leonardo", "Raphael", "Michaelangelo")
+ninja.each do |name|
+    puts name.upcase
+end 
 
 # 5- More Arrays
+favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
+#Sort the array
+favMovies.sort!# sort in place 
+
+
+#Reverse it
+favMovies.reverse!
+#print favMovies
+
+#Use the method pop
+favMovies.pop()
+#print favMovies
+
+#push "Guardians of the Galaxy"
+favMovies.push("Guardians of the Galaxy")
+ #print favMovies
+
+ #Remove Jaws
+ favMovies.delete("Jaws")
+
+ #Add this array ["Spiderman","Thor","Ant-Man"]
+ favMovies.push(["Spiderman","Thor","Ant-Man"])
+ #print favMovies
+
+ #if the array includes "Imitation of Life" if it does print "already here", 
+ #else add it to the array.
+if favMovies.find_index("Imitation of Life") 
+ puts ("already here") 
+else
+ favMovies.push ("Imitation of Life")
+end 
+
+#Print your final results
+print favMovies 
+
+# else 
+#     favMovies.push("Imitation of Life")
+# end
 # 6- Where is Waldo
 
 # 7- Excited Kitten
