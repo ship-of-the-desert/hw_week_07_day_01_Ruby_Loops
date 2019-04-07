@@ -76,13 +76,24 @@ else
 end 
 
 #Print your final results
-print favMovies 
+puts favMovies 
 
-# else 
-#     favMovies.push("Imitation of Life")
-# end
+
 # 6- Where is Waldo
+whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
+#Remove Eggbert  
+whereIsWaldo.delete("Eggbert")     
+#puts whereIsWaldo
+
+#Change "Neff" to "No One"
+whereIsWaldo[1][2]="No One"
+puts whereIsWaldo
+
+#Access and print "Waldo"
+puts whereIsWaldo[2][1][1]
 # 7- Excited Kitten
 
 # 8- A New Friend
