@@ -98,19 +98,22 @@ p whereIsWaldo
 puts whereIsWaldo[2][1][1]
 
 
-## Excited Kitten
+# Excited Kitten
 
 puts "Love me, pet me! HSSSSSS!" ** 20 
 
 ####
 
 num = 0 
-while num <= 200 
+while num <= 20
 if  (num.even?) 
-    puts "#{num} ...human...why you taking pictures of me?..."
+    puts "#{num} ...human...why you taking pictures of me?..." 
+else 
+    puts "#{num} Love me, pet me! HSSSSSS!"
 end 
 num = num + 1 
 end
+
 
 # ####
 
