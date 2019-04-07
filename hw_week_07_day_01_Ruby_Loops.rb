@@ -1,8 +1,11 @@
+#---------------------------------------------------------
+
 # 1- Easy Going
 #loop that will log the numbers 1 through 20.
 (1..20).each do |i|
 puts i
 end 
+#---------------------------------------------------------
 
 # 2- Get Even
 #loop that will log only the even numbers in 0 through 200.
@@ -11,6 +14,8 @@ end
         puts i
     end
 end
+
+#---------------------------------------------------------
 
 # 3- Wild Wild Life
 wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
@@ -31,8 +36,10 @@ dart[3]=dart[3]+" ,Hawkins"
 #Replace "Wolfy" from the wolfy array with "Gameboy".
 wolfy.shift()
 wolfy.unshift("Gameboy")
- # another way
+# another way
 wolfy[0]="Gameboy"
+
+#---------------------------------------------------------
 
 # 4- Yell at the Ninja Turtles
 #Capitalize each one of them and print out
@@ -41,12 +48,13 @@ ninja.each do |name|
     puts name.upcase
 end 
 
+#---------------------------------------------------------
+
 # 5- More Arrays
 favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
 #Sort the array
 favMovies.sort!# sort in place 
-
 
 #Reverse it
 favMovies.reverse!
@@ -58,26 +66,27 @@ favMovies.pop()
 
 #push "Guardians of the Galaxy"
 favMovies.push("Guardians of the Galaxy")
- #print favMovies
+#print favMovies
 
- #Remove Jaws
- favMovies.delete("Jaws")
+#Remove Jaws
+favMovies.delete("Jaws")
 
- #Add this array ["Spiderman","Thor","Ant-Man"]
- favMovies.push(["Spiderman","Thor","Ant-Man"])
- #print favMovies
+#Add this array ["Spiderman","Thor","Ant-Man"]
+favMovies.push(["Spiderman","Thor","Ant-Man"])
+#print favMovies
 
- #if the array includes "Imitation of Life" if it does print "already here", 
- #else add it to the array.
+#if the array includes "Imitation of Life" if it does print "already here", 
+#else add it to the array.
 if favMovies.find_index("Imitation of Life") 
- puts ("already here") 
+puts ("already here") 
 else
- favMovies.push ("Imitation of Life")
+favMovies.push ("Imitation of Life")
 end 
 
 #Print your final results
 puts favMovies 
 
+#---------------------------------------------------------
 
 # 6- Where is Waldo
 whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
@@ -94,6 +103,28 @@ puts whereIsWaldo
 
 #Access and print "Waldo"
 puts whereIsWaldo[2][1][1]
+
+#---------------------------------------------------------
+
 # 7- Excited Kitten
+#logs "Love me, pet me! HSSSSSS!" 20 times.
+#For every even number in loop, log "...human...why you taking pictures of me?...".
+
+20.times do |x| 
+puts ("Love me, pet me! HSSSSSS!")
+if x%2==0 # if number in loop is even
+    puts ("...human...why you taking pictures of me?...")
+end
+end
+
+#---------------------------------------------------------
 
 # 8- A New Friend
+#loop that prints Hello forever unless the user inputs Goodbye
+puts ("Enter Your input")
+input = gets
+unless  input.chomp.eql? "Goodbye"
+    puts ("Hello") 
+end 
+    
+
